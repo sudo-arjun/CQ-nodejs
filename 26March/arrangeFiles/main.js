@@ -2,19 +2,11 @@
 Create a folder with files having multiple ext.
 Based on extensions segerate files in diff. folder
 */
+// const mapFileName = []
 const fs = require('fs');
 const path = require('path');
 let fileNames = fs.readdirSync('./mix_files');
-// fs.readdir('./mix_files',(err,data)=>{
-//     if(err)
-//     {
-//         console.log(err);
-//     }
-//     else {
-//         fileNames = data;
-//         console.log(data);
-//     }
-// })
+
 
 for(let i = 0; i < fileNames.length; i++)
 {
