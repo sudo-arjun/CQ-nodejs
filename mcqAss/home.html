@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MCQ</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <h2>MCQ</h2>
+        <div class="box">
+            <p id="ques">Question will appear here</p>
+            <input type="radio" name="rad" id="r1">
+            <label for="r1">THis is label1</label>
+            <input type="radio" name="rad" id="r2">
+            <label for="r2">THis is label2</label>
+            <input type="radio" name="rad" id="r3">
+            <label for="r3">THis is label3</label>
+            <input type="radio" name="rad" id="r4">
+            <label for="r4">THis is label4</label>
+            <div>
+                <button id="submit">Submit</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let quesObj;
+        fetch(`http://127.0.0.1:3000/getquestion?n=1`)
+            .then((response) => {
+                // return JSON.parse(response);
+                // console.log(response);
+                // question = response;
+                return response.json();
+            })
+            .then((data) => {
+                quesObj = data;
+                console.log(quesObj);
+                document.querySelector('#ques').innerHTML = quesObj.question;
+                document.querySelectorAll('label').forEach((element,i)=>{
+                    element.innerHTML = quesObj.options[i];
+                })
+
+
+            })
+            .catch((err) => {
+                console.log("myerror: ", err);
+            })
+
+    </script>
+</body>
+
+</html>
