@@ -1,0 +1,58 @@
+body{
+    margin:0px;
+    background-color: #212121;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@keyframes circle{
+    from{
+        transform:rotate(0deg);
+        border-radius: 5%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    to{
+        transform:rotate(360deg);
+        border-radius: 5%;
+
+    }
+}@keyframes border{
+    from{
+        border-radius: 5%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    to{
+        border-radius: 5%;
+
+    }
+}
+.loader{
+    /* background-color: olive; */
+    width:4em;
+    height:4em;
+    animation-name:circle;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* animation-direction:alternate; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.005s;
+}
+.hole{
+    background-color: #212121;
+    animation-name:border;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition-property: height width;
+    transition-duration: 0.005s;
+    /* animation-timing-function: linear; */
+}
