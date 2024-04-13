@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adding Background Class with JavaScript</title>
+<style>
+    .background1 {
+        background-color: lightblue;
+        font-style: italic;
+        font-size: 50px;
+    }
+
+    .background2 {
+        background-color: lightgreen;
+    }
+    .background3 {
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+<div id="myDiv" class="background1">
+    <!-- Your content goes here -->
+    This is my 
+</div>
+
+<script>
+    // Get the div element
+    var myDiv = document.getElementById('myDiv');
+    console.log(myDiv.classList);
+
+    // Add background2 class after a delay
+    setTimeout(function() {
+        myDiv.classList.add('background2');
+        console.log(myDiv.classList);
+      }, 2000); // Add after 2 seconds
+      
+      // Example: Adding background3 class after another delay
+      setTimeout(function() {
+        myDiv.classList.add('background3');
+        console.log(myDiv.classList);
+    }, 4000); // Add after 4 seconds
+</script>
+</body>
+</html>

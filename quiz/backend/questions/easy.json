@@ -1,0 +1,27 @@
+[
+    {
+        "ques" : "What is my name:",
+        "options":["chetan","cheetah","sudo","sudo_"],
+        "ans":0
+    },
+    {
+        "ques" : "What is captial of haryana:",
+        "options":["fds","chandigarh","f","fd"],
+        "ans":1
+    },
+    {
+        "ques" : "What is capital of india",
+        "options":["delhi","new delhi","chandigarh","mumbai"],
+        "ans":1
+    },
+    {
+        "ques" : "What is capital of japan",
+        "options":["tokyo","new delhi","chandigarh","mumbai"],
+        "ans":0
+    },
+    {
+        "ques" : "What is capital of china",
+        "options":["delhi","beijing","chandigarh","mumbai"],
+        "ans":1
+    }
+]
