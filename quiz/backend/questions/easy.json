@@ -1,18 +1,18 @@
 [
     {
-        "ques" : "What is my name:",
-        "options":["chetan","cheetah","sudo","sudo_"],
-        "ans":0
+        "ques" : "What is the capital of india:",
+        "options":["delhi","new delhi","mumbai","chandigarh"],
+        "ans":1
     },
     {
         "ques" : "What is captial of haryana:",
-        "options":["fds","chandigarh","f","fd"],
+        "options":["bavneet","chandigarh","karnal","kurukshetra"],
         "ans":1
     },
     {
-        "ques" : "What is capital of india",
-        "options":["delhi","new delhi","chandigarh","mumbai"],
-        "ans":1
+        "ques" : "Which material is non metal",
+        "options":["iron","steal","graphite","mercury   "],
+        "ans":2
     },
     {
         "ques" : "What is capital of japan",
